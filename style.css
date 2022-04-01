@@ -1,8 +1,9 @@
 :root {
      --longitud: 200px;
      --ensamble: -64deg;
-     --color-base: #ccc;/*#ff008c;*/
+     --color-base: #ccc; /*#ff008c;*/
 }
+
 * {
      margin:0; padding:0;
 }
@@ -236,6 +237,7 @@ body.no_coords #coordinates:before { content:none; }
      transition:.2s;
      pointer-events: none;
 }*/
+
 .pentagon .penta-content:hover:before { background:transparent; }
 
 .pentagon .penta-content:after{
@@ -268,26 +270,26 @@ body.no_coords #coordinates:before { content:none; }
 .no-path {
     /* clip-path: polygon( 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%)!important;*/
 }
+
 .pentagon .penta-content.no-path img { transform:translateZ(100px); }
 
 #dodeca_shadow {
      transform-origin:center;
-     
 }
 
 #pantalla {
-            position:absolute;
-            z-index: 0;
-            bottom:10px;
-            right:10px;
-            display: flex;
-            width:50vw;
-            height:auto;
-            max-width:670px;
-            min-height: 450px;
-            border-radius:10px;
-            transition:.25s;
-          }
+     position:absolute;
+     z-index: 0;
+     bottom:10px;
+     right:10px;
+     display: flex;
+     width:50vw;
+     height:auto;
+     max-width:670px;
+     min-height: 450px;
+     border-radius:10px;
+     transition:.25s;
+}
 
 #pantalla.vacia { bottom:-100%; }
 
