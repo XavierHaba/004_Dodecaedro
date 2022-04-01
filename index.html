@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dodecaedro</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="no_coords no_grid no_dist persp-none">
+     <div id="distancia">0</div>
+     <div id="dodeca_container" class="shadow">
+          <div id="dodeca_z">
+               <div id="dodeca">
+                    <div id="coordinates"></div>
+                    <div id="mitad_1">
+                         <div id="cara_1" class="pentagon">
+                              <div class="penta-content">
+                              <span>1</span>
+                              <img src="img/001.jpg" alt="">
+                         </div>
+                         </div>
+                         <div id="cara_2" class="pentagon">
+                              <div class="penta-content brillo_1">
+                                   <span>2</span>
+                                   <img src="img/002.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_3" class="pentagon">
+                              <div class="penta-content brillo_2">
+                                   <span>3</span>
+                                   <img src="img/003.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_4" class="pentagon">
+                              <div class="penta-content sombra_1">
+                                   <span>4</span>
+                                   <img src="img/004.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_5" class="pentagon">
+                              <div class="penta-content sombra_2">
+                                   <span>5</span>
+                                   <img src="img/005.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_6" class="pentagon">
+                              <div class="penta-content sombra_3">
+                                   <span>6</span>
+                                   <img src="img/006.jpg" alt="">
+                              </div>
+                         </div>
+                    </div>
+                    <div id="mitad_2">
+                         <div id="cara_7" class="pentagon">
+                              <div class="penta-content sombra_3">
+                                   <span>7</span>
+                                   <img src="img/007.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_8" class="pentagon">
+                              <div class="penta-content sombra_1">
+                                   <span>8</span>
+                                   <img src="img/008.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_9" class="pentagon">
+                              <div class="penta-content sombra_2">
+                                   <span>9</span>
+                                   <img src="img/009.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_10" class="pentagon">
+                              <div class="penta-content sombra_2">
+                                   <span>10</span>
+                                   <img src="img/010.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_11" class="pentagon">
+                              <div class="penta-content sombra_2">
+                                   <span>11</span>
+                                   <img src="img/011.jpg" alt="">
+                              </div>
+                         </div>
+                         <div id="cara_12" class="pentagon">
+                              <div class="penta-content sombra_1">
+                                   <span>12</span>
+                                   <img src="img/012.jpg" alt="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="dodeca_shadow"></div>
+     </div>
+     <div id="pantalla" class="vacia shadow">
+          <div id="close_pantalla" onClick="CerrarPantalla()">×</div>
+          <div id="img-container"></div>
+     </div>
+     <div id="botonera" class="">
+          <div id="open_botonera">«</div>
+          <div id="grid_btn" class="btn" onClick="showGrid()">Grid</div>
+          <div id="coords_btn" class="btn" onClick="showCoords()">Axis</div>
+          <div id="dist_btn" class="btn" onClick="showDist()">Distance</div>
+          <div id="btns_persp">
+               <div><h4>Perspective</h4></div>
+               <div><input type="radio" name="perspective" value="none" onChange="radioValue(this.value)">None</div>
+               <div><input type="radio" name="perspective" value="1000" onChange="radioValue(this.value)">1000</div>
+               <div><input type="radio" name="perspective" value="1500" onChange="radioValue(this.value)">1500</div>
+               <div><input type="radio" name="perspective" value="2000" onChange="radioValue(this.value)">2000</div>
+          </div>
+     </div>
+     
+     <script src="script.js"></script>
+</body>
+</html>
